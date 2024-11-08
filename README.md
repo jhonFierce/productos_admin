@@ -72,6 +72,7 @@ La API sigue una estructura RESTful para gestionar productos y categorías, los 
 El cuerpo en general es el mostrado a continuación con las propiedades rating_rate y rating_count opcionales y se inicializan en null, 
 modifique estas propiedades en un post o un put para generar los resultados deseados, no es necesario enviar todas las ropiedades en un put(update), solo envíe las que requiera modificar:
 
+```json
 {
         "id": 1,
         "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -82,6 +83,7 @@ modifique estas propiedades en un post o un put para generar los resultados dese
         "rating_rate": "3.9",
         "rating_count": 120
 }
+```
 
 Se comparte un archivo en la raiz del proyecto: productos_admin.postman_collection.json para usar con postman o compatibles
 contiene dos carpetas on_xampp probado en xampp y on_vite probado con php artisan serve o composer run dev que se puede ejecutar en la raiz del proyecto.
