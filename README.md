@@ -72,6 +72,8 @@ La API sigue una estructura RESTful para gestionar productos y categorías, los 
 El cuerpo en general es el mostrado a continuación con las propiedades rating_rate y rating_count opcionales y se inicializan en null, 
 modifique estas propiedades en un post o un put para generar los resultados deseados, no es necesario enviar todas las ropiedades en un put(update), solo envíe las que requiera modificar:
 
+nota: El rating rate fue deducido que abarca de 0 a 5 como si fueran estrellas, esta validación (restricción esta contemplada) y si se usa un valor mayor o incompatible, el post o put no se ejecutará. 
+
 ```json
 {
         "id": 1,
